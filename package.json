@@ -1,0 +1,26 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/deno": "^1.2.0",
+    "@astrojs/solid-js": "^1.2.0",
+    "@solidjs/router": "^0.5.0",
+    "astro": "^1.5.0",
+    "solid-js": "^1.5.1"
+  },
+  "devDependencies": {
+    "@unocss/reset": "^0.45.29",
+    "solid-headless": "^0.13.0",
+    "solid-heroicons": "^3.1.0",
+    "unocss": "^0.45.29"
+  }
+}
