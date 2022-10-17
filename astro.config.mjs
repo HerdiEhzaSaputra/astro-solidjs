@@ -7,7 +7,19 @@ import unocss from 'unocss/astro'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs(), unocss()],
+  // site: 'https://xezar.deno.dev/',
+
+  integrations: [solidJs(), unocss(),],
+  adapter: deno(),
   output: "server",
-  adapter: deno()
+  build: {
+    serverEntry: 'main.mjs'
+  },
+  server: { port: 3000, host: true},
+  vite: {
+    ssr: {
+      // Example: Force a broken package to skip SSR processing, if needed
+      external: ['broken-npm-package'],
+    }
+  }
 });

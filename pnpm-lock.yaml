@@ -9,6 +9,7 @@ specifiers:
   solid-headless: ^0.13.0
   solid-heroicons: ^3.1.0
   solid-js: ^1.5.1
+  solid-transition-group: ^0.0.11
   unocss: ^0.45.29
 
 dependencies:
@@ -21,7 +22,8 @@ dependencies:
 devDependencies:
   '@unocss/reset': 0.45.29
   solid-headless: 0.13.0_solid-js@1.5.7
-  solid-heroicons: 3.1.0
+  solid-heroicons: 3.1.0_solid-js@1.5.7
+  solid-transition-group: 0.0.11_solid-js@1.5.7
   unocss: 0.45.29
 
 packages:
@@ -3480,8 +3482,10 @@ packages:
       solid-use: 0.5.0_solid-js@1.5.7
     dev: true
 
-  /solid-heroicons/3.1.0:
+  /solid-heroicons/3.1.0_solid-js@1.5.7:
     resolution: {integrity: sha512-cOw5cxS3zgcoOChyvobvHZmHSCinnkkpsiyEiMW+irltb/6iwKq123CUD/W70astfwBvVopnixCQIF19JUzzMA==}
+    peerDependencies:
+      solid-js: '>= ^1.2.5'
     dependencies:
       solid-js: 1.5.7
     dev: true
@@ -3490,6 +3494,14 @@ packages:
     resolution: {integrity: sha512-L1UuyMuZZARAwzXo5NZDhE6yxc14aqNbVOUoGzvlcxRZo1Cm4ExhPV0diEfwDyiKG/igqNNLkNurHkXiI5sVEg==}
     dependencies:
       csstype: 3.1.1
+
+  /solid-transition-group/0.0.11_solid-js@1.5.7:
+    resolution: {integrity: sha512-WcMhZvaQKAWfByVgtJuKwR2naXQHG1tJHDvqsC/EyNsoNWRkDu+9AWcwaUWW1kXZ24n17We0IIRe7z4G5dEYRw==}
+    peerDependencies:
+      solid-js: ^1.0.0
+    dependencies:
+      solid-js: 1.5.7
+    dev: true
 
   /solid-use/0.5.0_solid-js@1.5.7:
     resolution: {integrity: sha512-z1AaS99SL3gNP70K4+XIVKGXDRI56m3Q6Q4X63bfgw0kaN6cwT4SAyFZAmIRjHcvf5rOMRQfNgUV4YVDha+LcQ==}

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import TransitionComp from '../components/TransitionComp'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,6 +34,8 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+
+	<TransitionComp client:visible/>
 </Layout>
 
 <style>
